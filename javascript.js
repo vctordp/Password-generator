@@ -3,11 +3,13 @@ const result = document.querySelector('#result');
 const copied = document.querySelector("#copied");
 const copyButton = document.querySelector("#copyButton");
 
-const symbol = ['@','!','*', '$'];
+const symbol = String.fromCharCode(
+  33,34,35,36,37,38,39,40,41,42,43,44,45,46,47
+);
 let password = '';
 
 function getRandomSymbol(){
-  return Math.floor(Math.random() * symbol.length);
+   return Math.floor(Math.random() * symbol.length);
 }
 
 
